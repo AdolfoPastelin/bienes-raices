@@ -1,6 +1,7 @@
 .barra {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 
 	@include tablet {
 		img {
@@ -9,5 +10,38 @@
 
 		flex-direction: row;
 		justify-content: space-between;
+	}
+}
+
+.navegacion {
+	a {
+		color: $blanco;
+		text-decoration: none;
+		font-size: 2.2rem;
+		display: block;
+		text-align: center;
+		position: relative;
+		top: .3rem;
+	}
+
+	@include tablet {
+		& {
+			display: flex;
+			flex-direction: row;
+
+			a {
+				margin-right: 2rem;
+				font-size: 2rem;
+
+				&:last-of-type {
+					margin-right: 0;
+				}
+
+				&:hover {
+					color: $amarillo;
+					text-shadow: $sombraNav;
+				}
+			}
+		}
 	}
 }
