@@ -1,0 +1,13 @@
+.barra {
+	display: flex;
+	flex-direction: column;
+
+	@include tablet {
+		img {
+			width: 30rem;
+		}
+
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
