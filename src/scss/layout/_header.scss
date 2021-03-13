@@ -10,12 +10,33 @@
 	background-color: $dark_grey;
 	padding: 1rem 0 3rem 0;
 
-	& .inicio {
+	&.inicio {
 		background-position: center center;
 		background-size: cover;
 
 		@include tablet {
 			min-height: 70rem;
 		}
+
+		.contenido-header {
+			@include tablet {
+				min-height: 70rem;
+			}
+		}
+	}
+}
+
+.contenido-header{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	h1 {
+		text-align: left;
+		color: $blanco;
+		font-weight: bold;
+		line-height: 2;
+		//Establece un ancho máximo al h1 haciendo que tenga un salto de linea al no caber el contenido
+		max-width: 60rem; 
 	}
 }
