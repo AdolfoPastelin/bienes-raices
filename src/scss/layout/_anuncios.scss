@@ -1,12 +1,13 @@
 @include tablet {
 	.contenedor-anuncios {
-		@include grid(3, 2rem);
+		@include grid(3, 3rem);
 	}
 }
 
 .anuncio {
 	background-color: lighten($grey, 5);
 	border: 1px solid lighten($grey, 10);
+	padding-bottom: 2rem;
 
 	.contenido-anuncio {
 		padding: 2rem;
@@ -21,6 +22,7 @@
 		font-weight: bold;
 		font-size: 3rem;
 	}
+
 }
 
 .iconos-caracteristicas {
@@ -35,11 +37,11 @@
 		justify-content: center;
 
 		img {
-			flex-basis: 5rem;
+			flex-basis: 4.5rem;
 		}
 
 		p {
-			padding: .8rem;
+			padding: .5rem;
 			font-weight: bold;
 		}
 	}
